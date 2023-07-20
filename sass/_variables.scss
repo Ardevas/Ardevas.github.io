@@ -1,0 +1,17 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap);
+
+$roboto: "Roboto", sans-serif;
+$shrikhand: "Shrikhand", cursive;
+
+$main-color: #9356DC;
+$second-color: #FF79DA;
+$tert-color: #99E2D0;
+$loc-bg-color: #EAEAEA;
+$main-bg-color: #F6F6F6;
+$second-font-color: #353535;
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
