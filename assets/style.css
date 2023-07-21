@@ -106,34 +106,6 @@ main .functioning h2 {
           flex-direction: row;
   margin-top: 3rem;
 }
-main .functioning ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  text-align: center;
-  gap: 1.56rem;
-  padding: 0;
-  margin-left: 0.78rem;
-}
-main .functioning li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 4.52369rem;
-  border-radius: 1.25rem;
-  background-color: #F6F6F6;
-  -webkit-box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-  padding-left: 2rem;
-  gap: 1.25rem;
-}
 main .functioning .steps {
   display: -webkit-box;
   display: -ms-flexbox;
