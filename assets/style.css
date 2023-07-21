@@ -1,5 +1,9 @@
-@import url(https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap);
-@import url(https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&family=Shrikhand&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&family=Shrikhand&display=swap);
+body {
+  margin: 0;
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -43,6 +47,145 @@ header .location {
 header .loc-dot {
   width: 0.75rem;
   height: 1rem;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+main .reserve {
+  background-color: #F6F6F6;
+}
+main .reserve h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2.44rem 3.62rem 0.8rem 2.62rem;
+}
+main .reserve p {
+  color: #353535;
+  font-size: 1.125rem;
+  font-weight: 300;
+  margin-bottom: 0;
+}
+main .reserve button {
+  width: 13.625rem;
+  height: 3.125rem;
+  margin: 1.69rem 0 3.56rem;
+  padding: 0.81rem 1.17rem;
+  border-radius: 1.5625rem;
+  background: linear-gradient(175deg, #FF79DA 0%, #9356DC 100%);
+  border: none;
+  -webkit-box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  color: white;
+  font-size: 1rem;
+}
+main .functioning {
+  padding: 0 1.25rem;
+}
+main .functioning h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 3rem;
+}
+main .functioning ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  gap: 1.56rem;
+  padding: 0;
+  margin-left: 0.78rem;
+}
+main .functioning li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 4.52369rem;
+  border-radius: 1.25rem;
+  background-color: #F6F6F6;
+  -webkit-box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  padding-left: 2rem;
+  gap: 1.25rem;
+}
+main .functioning .steps {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  gap: 1.56rem;
+  padding: 0;
+  margin-left: 0.78rem;
+}
+main .functioning .stepCard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 4.52369rem;
+  border-radius: 1.25rem;
+  background-color: #F6F6F6;
+  -webkit-box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  padding-left: 2rem;
+  gap: 1.25rem;
+}
+main .functioning .stepNumber {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  color: white;
+  background-color: #9356DC;
+  height: 1.5rem;
+  width: 1.5rem;
+  margin-left: -2.75rem;
+  margin-top: 0.5rem;
+}
+main .functioning .fa-solid {
+  width: 1rem;
+  color: #7e7e7e;
+}
+main .functioning .fa-store {
+  color: #9356DC;
 }
 
 * {
