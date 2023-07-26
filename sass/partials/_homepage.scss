@@ -88,28 +88,28 @@ main {
             gap: 1.56rem;
             padding: 0;
             margin-left: 0.78rem;
-        }
+        
+            &__card {
+                display: flex;
+                align-items: center;
+                height: 4.52369rem;
+                border-radius: 1.25rem;
+                background-color: $main-bg-color;
+                box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+                padding-left: 2rem;
+                gap: 1.25rem;
+            }
 
-        .steps__card {
-            display: flex;
-            align-items: center;
-            height: 4.52369rem;
-            border-radius: 1.25rem;
-            background-color: $main-bg-color;
-            box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-            padding-left: 2rem;
-            gap: 1.25rem;
-        }
-
-        .steps__number {
-            @include flex-row-center;
-            border-radius: 50%;
-            color: white;
-            background-color: $main-color;
-            height: 1.5rem;
-            width: 1.5rem;
-            margin-left: -2.75rem;
-            margin-top: 0.5rem;
+            &__number {
+                @include flex-row-center;
+                border-radius: 50%;
+                color: white;
+                background-color: $main-color;
+                height: 1.5rem;
+                width: 1.5rem;
+                margin-left: -2.75rem;
+                margin-top: 0.5rem;
+            }
         }
 
         .fa-solid {
@@ -123,7 +123,7 @@ main {
     }
 
 //Restaurants
-    .restaurants {
+    .menu {
         background-color: $main-bg-color;
 
         h2 {
@@ -133,7 +133,7 @@ main {
             margin-left: 1.25rem;
         }
     
-        .restaurants__cards {
+        .restaurants {
             @include flex-column-center;
             margin-left: 1.06rem;
             margin-right: 1.13rem;
@@ -141,7 +141,7 @@ main {
             gap: 1.12rem;
         
 
-            .restaurant__card {
+            &__card {
                 border-radius: 0.9375rem;
                 background-color: white;
                 color: black;
@@ -169,13 +169,13 @@ main {
                     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
                 }
 
-                .restaurant__infos {
+                .restaurants__infos {
                     @include flex-row-center;
                     justify-content: space-between;
                     padding-left: 0.81rem;
                     padding-right: 1.56rem;
 
-                    .restaurant__text {
+                    .restaurants__text {
                         display: flex;
                         flex-direction: column;
                         align-items: flex-start;
@@ -198,13 +198,31 @@ main {
                         font-size: 1.35rem;
                     }
 
-                    .liked-icon{
-                        opacity: 50%;
-                        position: absolute;
+                    .liked-icon {
+                        display: none;
+                        background-image: linear-gradient(to top, $second_color, $main_color);
+                        background-clip: text;
+                        -webkit-background-clip: text;
+                        color: transparent;
+                        position: relative;
+                        animation: heartGradient 0.3s ease-in-out;
 
-                        & :checked {
-                            opacity: 100%;
+                        @keyframes heartGradient {
+                            0% {
+                              opacity: 0;
+                            }
+                            100% {
+                              opacity: 1;
+                            }
                         }
+                    }
+
+                    input[type="checkbox"]:checked + label .like-icon {
+                        display: none;
+                    }
+                      
+                    input[type="checkbox"]:checked + label .liked-icon {
+                        display: inline-block;
                     }
                 }
             }
