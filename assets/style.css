@@ -9,40 +9,22 @@ body {
 }
 
 header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 header h1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   padding: 0.875rem 5.5625rem 0.8125rem 5.5625rem;
   margin: 0;
-  -webkit-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
   z-index: 0;
 }
 header .location {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   background-color: #EAEAEA;
   color: #353535;
   gap: 1.0625rem;
@@ -54,28 +36,17 @@ header .loc-dot {
 }
 
 main {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   text-align: center;
 }
 main .reserve {
   background-color: #F6F6F6;
 }
 main .reserve h2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   margin: 2.44rem 3.62rem 0.8rem 2.62rem;
 }
 main .reserve p {
@@ -92,69 +63,45 @@ main .reserve button {
   border-radius: 1.5625rem;
   background: linear-gradient(175deg, #FF79DA 0%, #9356DC 100%);
   border: none;
-  -webkit-box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   color: white;
   font-size: 1rem;
-  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 main .reserve button:hover {
   opacity: 75%;
-  -webkit-box-shadow: 0px 4px 10px 3px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 4px 10px 3px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 10px 3px rgba(0, 0, 0, 0.25);
 }
 main .functioning {
   margin: 0 1.25rem 4.25rem;
 }
 main .functioning h2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   margin-top: 3rem;
 }
 main .functioning .steps {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   text-align: center;
   gap: 1.56rem;
   padding: 0;
   margin-left: 0.78rem;
 }
 main .functioning .steps__card {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   height: 4.52369rem;
   border-radius: 1.25rem;
   background-color: #F6F6F6;
-  -webkit-box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
   padding-left: 2rem;
   gap: 1.25rem;
 }
 main .functioning .steps__number {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   border-radius: 50%;
   color: white;
   background-color: #9356DC;
@@ -174,24 +121,14 @@ main .restaurants {
   background-color: #F6F6F6;
 }
 main .restaurants h2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   margin-top: 3.38rem;
   margin-left: 1.25rem;
 }
 main .restaurants .restaurants__cards {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   text-align: center;
   margin-left: 1.06rem;
   margin-right: 1.13rem;
@@ -204,42 +141,40 @@ main .restaurants .restaurants__cards .restaurant__card {
   color: black;
   border-bottom-left-radius: 0.94rem;
   border-bottom-right-radius: 0.94rem;
+  position: relative;
 }
 main .restaurants .restaurants__cards .restaurant__card img {
   width: 100%;
-  height: 14.4375rem;
+  height: 10.8775rem;
   border-top-left-radius: 0.94rem;
   border-top-right-radius: 0.94rem;
   -o-object-fit: cover;
      object-fit: cover;
+  -o-object-position: 50% 61%;
+     object-position: 50% 61%;
+}
+main .restaurants .restaurants__cards .restaurant__card .card__label {
+  position: absolute;
+  color: #008766;
+  background: #99E2D0;
+  right: 0.75rem;
+  top: 0.81rem;
+  border-radius: 0.125rem;
+  padding: 0.44rem 0.6rem 0.37rem 0.56rem;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
 }
 main .restaurants .restaurants__cards .restaurant__card .restaurant__infos {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
   padding-left: 0.81rem;
   padding-right: 1.56rem;
 }
 main .restaurants .restaurants__cards .restaurant__card .restaurant__infos .restaurant__text {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
 }
 main .restaurants .restaurants__cards .restaurant__card .restaurant__infos .restaurant__text h3 {
   margin-bottom: 0;
@@ -248,8 +183,18 @@ main .restaurants .restaurants__cards .restaurant__card .restaurant__infos .rest
   margin-top: 0.31rem;
   font-weight: 300;
 }
+main .restaurants .restaurants__cards .restaurant__card .restaurant__infos .like-checkbox {
+  display: none;
+}
 main .restaurants .restaurants__cards .restaurant__card .restaurant__infos .fa-heart {
   font-size: 1.35rem;
+}
+main .restaurants .restaurants__cards .restaurant__card .restaurant__infos .liked-icon {
+  opacity: 50%;
+  position: absolute;
+}
+main .restaurants .restaurants__cards .restaurant__card .restaurant__infos .liked-icon :checked {
+  opacity: 100%;
 }
 
 footer {
@@ -263,22 +208,13 @@ footer h3 {
   font-weight: 400;
 }
 footer .links {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 0.44rem;
 }
 footer .links .link, footer .links .linkLight {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   gap: 0.69rem;
 }
 footer .links .link .fa-handshake-angle, footer .links .linkLight .fa-handshake-angle {
@@ -297,4 +233,4 @@ footer .links .linkLight {
 
 h1, footer h3 {
   font-family: "Shrikhand", cursive;
-}
+}/*# sourceMappingURL=style.css.map */
