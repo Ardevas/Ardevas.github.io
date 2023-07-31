@@ -1,0 +1,67 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&family=Shrikhand&display=swap);
+
+$roboto: "Roboto", sans-serif;
+$shrikhand: "Shrikhand", cursive;
+
+$main-color: #9356DC;
+$second-color: #FF79DA;
+$main-bg-color: #F6F6F6;
+$second-font-color: #353535;
+$loc-color: #EAEAEA;
+$icon-color: #7E7E7E;
+$green: #008766;
+$green-light: #99E2D0;
+
+@mixin flex-row-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-column-center {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+@mixin heartGradient {
+    .like-checkbox {
+        display: none;
+    }
+
+    .fa-heart {
+        font-size: 1.35rem;
+    }
+
+    .like-icon {
+        cursor: pointer;
+    }
+
+    .liked-icon {
+        display: none;
+        background-image: linear-gradient(to top, $second_color, $main_color);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        position: relative;
+        animation: heartGradient 0.3s ease-in-out;
+        cursor: pointer;
+
+        @keyframes heartGradient {
+            0% {
+            opacity: 0;
+            }
+            100% {
+            opacity: 1;
+            }
+        }
+    }
+
+    input[type="checkbox"]:checked + label .like-icon {
+        display: none;
+    }
+    
+    input[type="checkbox"]:checked + label .liked-icon {
+        display: inline-block;
+    }
+}

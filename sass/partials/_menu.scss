@@ -1,0 +1,96 @@
+.headnav {
+    @include flex-row-center;
+}
+
+.backhome {
+    color: black;
+    position: absolute;
+    left: 1.06rem;
+}
+
+img {
+    width: 100%;
+    height: 15.75rem;
+    object-fit: cover;
+}
+
+.menu {
+    gap: 2.5rem;
+    border-top-left-radius: 1.75rem;
+    border-top-right-radius: 1.75rem;
+    background-color: $main-bg-color;
+    position: relative;
+    bottom: 3.1rem;
+    margin-bottom: -3.1rem;
+    padding: 0.81rem;
+
+    .title {
+        @include heartGradient;
+        display: flex;
+        align-items: center;
+        gap: 1.8rem;
+        margin-left: 0.25rem;
+    }
+
+    h2 {
+        font-family: $shrikhand;
+        font-weight: 400;
+    }
+
+    .cardTitle {
+        font-weight: 300;
+    }
+
+    #borderBottom {
+        border-bottom: 0.1875rem solid #99E2D0;
+        width: 2.5rem;
+        height: 1.4rem;
+    }
+
+    .menu__list {
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+    }
+
+    .menu__step {
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .order {
+        display: flex;
+        justify-content: center;
+    }
+
+    button {
+        margin-top: 0;
+        margin-bottom: 1.69rem;
+    }
+
+
+    &__card {
+        display: flex;
+        flex-direction: row;
+        border-radius: 0.9375rem;
+        background-color: white;
+        color: black;
+        padding: 0.94rem;
+        justify-content: space-between;
+
+        h3 {
+            margin: 0;
+        }
+
+        p {
+            margin-top: 0.31rem;
+            margin-bottom: 0;
+        }
+
+    .menu__price {
+        padding-top: 1.4rem;
+        font-weight: bold;
+    }
+    }
+}

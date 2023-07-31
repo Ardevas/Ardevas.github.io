@@ -1,86 +1,55 @@
 @import url(https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&family=Shrikhand&display=swap);
-@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&family=Shrikhand&display=swap);
-a {
-  text-decoration: none;
-}
-
-body {
-  margin: 0;
-}
-
-header {
-  display: flex;
-  flex-direction: column;
-}
-header h1 {
+.homepage_title {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0.875rem 5.5625rem 0.8125rem 5.5625rem;
-  margin: 0;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
-  z-index: 0;
+  position: relative;
+  z-index: 1;
 }
-header .location {
+
+.location {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #EAEAEA;
   color: #353535;
   gap: 1.0625rem;
-  z-index: -1;
 }
-header .loc-dot {
+
+.loc-dot {
   width: 0.75rem;
   height: 1rem;
 }
 
-main {
+.reserve {
   display: flex;
   flex-direction: column;
-  text-align: center;
-}
-main .reserve {
   background-color: #F6F6F6;
+  align-items: center;
 }
-main .reserve h2 {
+.reserve h2 {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 2.44rem 3.62rem 0.8rem 2.62rem;
 }
-main .reserve p {
+.reserve p {
+  text-align: center;
   color: #353535;
   font-size: 1.125rem;
-  font-weight: 300;
   margin-bottom: 0;
 }
-main .reserve button {
-  width: 13.625rem;
-  height: 3.125rem;
-  margin: 1.69rem 0 3.56rem;
-  padding: 0.81rem 1.17rem;
-  border-radius: 1.5625rem;
-  background: linear-gradient(175deg, #FF79DA 0%, #9356DC 100%);
-  border: none;
-  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-  color: white;
-  font-size: 1rem;
-  transition: all 0.3s ease-in-out;
-}
-main .reserve button:hover {
-  opacity: 75%;
-  box-shadow: 0px 4px 10px 3px rgba(0, 0, 0, 0.25);
-}
-main .functioning {
+
+.functioning {
   margin: 0 1.25rem 4.25rem;
 }
-main .functioning h2 {
+.functioning h2 {
   display: flex;
   flex-direction: row;
   margin-top: 3rem;
 }
-main .functioning .steps {
+.functioning .steps {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -88,7 +57,7 @@ main .functioning .steps {
   padding: 0;
   margin-left: 0.78rem;
 }
-main .functioning .steps__card {
+.functioning .steps__card {
   display: flex;
   align-items: center;
   height: 4.52369rem;
@@ -98,7 +67,7 @@ main .functioning .steps__card {
   padding-left: 2rem;
   gap: 1.25rem;
 }
-main .functioning .steps__number {
+.functioning .steps__number {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -110,32 +79,34 @@ main .functioning .steps__number {
   margin-left: -2.75rem;
   margin-top: 0.5rem;
 }
-main .functioning .fa-solid {
+.functioning .fa-solid {
   width: 1rem;
-  color: #7e7e7e;
+  color: #7E7E7E;
 }
-main .functioning .fa-store {
+.functioning .fa-store {
   color: #9356DC;
 }
-main .menu {
+
+.menus {
   background-color: #F6F6F6;
+  padding-top: 3.38rem;
+  padding-bottom: 4.12rem;
 }
-main .menu h2 {
+.menus h2 {
   display: flex;
   flex-direction: row;
-  margin-top: 3.38rem;
+  margin-top: 0;
   margin-left: 1.25rem;
 }
-main .menu .restaurants {
+.menus .restaurants {
   display: flex;
   flex-direction: column;
   text-align: center;
   margin-left: 1.06rem;
   margin-right: 1.13rem;
-  margin-bottom: 4.13rem;
   gap: 1.12rem;
 }
-main .menu .restaurants__card {
+.menus .restaurants__card {
   border-radius: 0.9375rem;
   background-color: white;
   color: black;
@@ -143,7 +114,7 @@ main .menu .restaurants__card {
   border-bottom-right-radius: 0.94rem;
   position: relative;
 }
-main .menu .restaurants__card img {
+.menus .restaurants__card img {
   width: 100%;
   height: 10.8775rem;
   border-top-left-radius: 0.94rem;
@@ -153,7 +124,7 @@ main .menu .restaurants__card img {
   -o-object-position: 50% 61%;
      object-position: 50% 61%;
 }
-main .menu .restaurants__card .card__label {
+.menus .restaurants__card .card__label {
   position: absolute;
   color: #008766;
   background: #99E2D0;
@@ -163,7 +134,7 @@ main .menu .restaurants__card .card__label {
   padding: 0.44rem 0.6rem 0.37rem 0.56rem;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
 }
-main .menu .restaurants__card .restaurants__infos {
+.menus .restaurants__card .restaurants__infos {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -171,25 +142,16 @@ main .menu .restaurants__card .restaurants__infos {
   padding-left: 0.81rem;
   padding-right: 1.56rem;
 }
-main .menu .restaurants__card .restaurants__infos .restaurants__text {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-main .menu .restaurants__card .restaurants__infos .restaurants__text h3 {
-  margin-bottom: 0;
-}
-main .menu .restaurants__card .restaurants__infos .restaurants__text p {
-  margin-top: 0.31rem;
-  font-weight: 300;
-}
-main .menu .restaurants__card .restaurants__infos .like-checkbox {
+.menus .restaurants__card .restaurants__infos .like-checkbox {
   display: none;
 }
-main .menu .restaurants__card .restaurants__infos .fa-heart {
+.menus .restaurants__card .restaurants__infos .fa-heart {
   font-size: 1.35rem;
 }
-main .menu .restaurants__card .restaurants__infos .liked-icon {
+.menus .restaurants__card .restaurants__infos .like-icon {
+  cursor: pointer;
+}
+.menus .restaurants__card .restaurants__infos .liked-icon {
   display: none;
   background-image: linear-gradient(to top, #FF79DA, #9356DC);
   background-clip: text;
@@ -197,6 +159,7 @@ main .menu .restaurants__card .restaurants__infos .liked-icon {
   color: transparent;
   position: relative;
   animation: heartGradient 0.3s ease-in-out;
+  cursor: pointer;
 }
 @keyframes heartGradient {
   0% {
@@ -206,11 +169,22 @@ main .menu .restaurants__card .restaurants__infos .liked-icon {
     opacity: 1;
   }
 }
-main .menu .restaurants__card .restaurants__infos input[type=checkbox]:checked + label .like-icon {
+.menus .restaurants__card .restaurants__infos input[type=checkbox]:checked + label .like-icon {
   display: none;
 }
-main .menu .restaurants__card .restaurants__infos input[type=checkbox]:checked + label .liked-icon {
+.menus .restaurants__card .restaurants__infos input[type=checkbox]:checked + label .liked-icon {
   display: inline-block;
+}
+.menus .restaurants__card .restaurants__infos .restaurants__text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.menus .restaurants__card .restaurants__infos .restaurants__text h3 {
+  margin-bottom: 0;
+}
+.menus .restaurants__card .restaurants__infos .restaurants__text p {
+  margin-top: 0.31rem;
 }
 
 footer {
@@ -243,10 +217,164 @@ footer .links .linkLight {
   font-weight: 300;
 }
 
+.headnav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.backhome {
+  color: black;
+  position: absolute;
+  left: 1.06rem;
+}
+
+img {
+  width: 100%;
+  height: 15.75rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.menu {
+  gap: 2.5rem;
+  border-top-left-radius: 1.75rem;
+  border-top-right-radius: 1.75rem;
+  background-color: #F6F6F6;
+  position: relative;
+  bottom: 3.1rem;
+  margin-bottom: -3.1rem;
+  padding: 0.81rem;
+}
+.menu .title {
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
+  margin-left: 0.25rem;
+}
+.menu .title .like-checkbox {
+  display: none;
+}
+.menu .title .fa-heart {
+  font-size: 1.35rem;
+}
+.menu .title .like-icon {
+  cursor: pointer;
+}
+.menu .title .liked-icon {
+  display: none;
+  background-image: linear-gradient(to top, #FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  position: relative;
+  animation: heartGradient 0.3s ease-in-out;
+  cursor: pointer;
+}
+@keyframes heartGradient {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.menu .title input[type=checkbox]:checked + label .like-icon {
+  display: none;
+}
+.menu .title input[type=checkbox]:checked + label .liked-icon {
+  display: inline-block;
+}
+.menu h2 {
+  font-family: "Shrikhand", cursive;
+  font-weight: 400;
+}
+.menu .cardTitle {
+  font-weight: 300;
+}
+.menu #borderBottom {
+  border-bottom: 0.1875rem solid #99E2D0;
+  width: 2.5rem;
+  height: 1.4rem;
+}
+.menu .menu__list {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+.menu .menu__step {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.menu .order {
+  display: flex;
+  justify-content: center;
+}
+.menu button {
+  margin-top: 0;
+  margin-bottom: 1.69rem;
+}
+.menu__card {
+  display: flex;
+  flex-direction: row;
+  border-radius: 0.9375rem;
+  background-color: white;
+  color: black;
+  padding: 0.94rem;
+  justify-content: space-between;
+}
+.menu__card h3 {
+  margin: 0;
+}
+.menu__card p {
+  margin-top: 0.31rem;
+  margin-bottom: 0;
+}
+.menu__card .menu__price {
+  padding-top: 1.4rem;
+  font-weight: bold;
+}
+
 * {
   font-family: "Roboto", sans-serif;
 }
 
 h1, footer h3 {
   font-family: "Shrikhand", cursive;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font-weight: lighter;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  padding: 0.875rem 5.5625rem 0.8125rem 5.5625rem;
+  margin: 0;
+}
+
+button {
+  width: 13.625rem;
+  height: 3.125rem;
+  margin: 1.69rem 0 3.56rem;
+  padding: 0.81rem 1.17rem;
+  border-radius: 1.5625rem;
+  background: linear-gradient(175deg, #FF79DA 0%, #9356DC 100%);
+  border: none;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  color: white;
+  font-size: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+button:hover {
+  opacity: 75%;
+  box-shadow: 0px 4px 10px 3px rgba(0, 0, 0, 0.25);
 }/*# sourceMappingURL=style.css.map */
