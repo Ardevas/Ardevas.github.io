@@ -1,4 +1,24 @@
 @import url(https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&family=Shrikhand&display=swap);
+@keyframes slideCheck {
+  0% {
+    opacity: 0;
+    width: 0rem;
+  }
+  100% {
+    opacity: 1;
+    width: 3.5rem;
+  }
+}
+@keyframes slideCheckReverse {
+  0% {
+    opacity: 1;
+    width: 3.5rem;
+  }
+  100% {
+    opacity: 0;
+    width: 0rem;
+  }
+}
 .homepage_title {
   display: flex;
   justify-content: center;
@@ -315,25 +335,65 @@ img {
   margin-top: 0;
   margin-bottom: 1.69rem;
 }
-.menu__card {
+.menu .menu__article {
+  display: flex;
+  align-items: center;
+  border-radius: 0.9375rem;
+  overflow: hidden;
+  box-shadow: 0px 4.0114941597px 15.0431032181px 0px rgba(0, 0, 0, 0.1);
+}
+.menu .menu__article:hover .userCheck {
+  animation: slideCheck 0.2s ease-in-out forwards;
+}
+.menu .menu__article:not(:hover) .userCheck {
+  animation: slideCheckReverse 0.2s ease-in-out forwards;
+}
+.menu .menu__info {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.menu .menu__card {
   display: flex;
   flex-direction: row;
-  border-radius: 0.9375rem;
   background-color: white;
   color: black;
   padding: 0.94rem;
   justify-content: space-between;
+  flex-grow: 1;
+  flex-shrink: 1;
+  white-space: nowrap;
+  overflow: hidden;
 }
-.menu__card h3 {
+.menu .menu__card h3 {
   margin: 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
-.menu__card p {
+.menu .menu__card p {
   margin-top: 0.31rem;
   margin-bottom: 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
-.menu__card .menu__price {
+.menu .menu__card .menu__price {
   padding-top: 1.4rem;
   font-weight: bold;
+}
+.menu .userCheck {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #99E2D0;
+  height: 4.82rem;
+  width: 0%;
+  transition: width 0.2s ease-in-out;
+}
+.menu .userCheck .fa-circle-check {
+  font-size: 1.5rem;
+  color: white;
+  background: #99E2D0;
+  width: 40%;
 }
 
 * {

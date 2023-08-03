@@ -65,3 +65,27 @@ $green-light: #99E2D0;
         display: inline-block;
     }
 }
+
+@keyframes slideCheck {
+    0% {
+    opacity: 0;
+    width: 0rem;
+    }
+
+    100% {
+    opacity: 1;
+    width: 3.5rem;
+    }
+}
+
+@keyframes slideCheckReverse {
+    0% {
+        opacity: 1;
+        width: 3.5rem;
+    }
+
+    100% {
+        opacity: 0;
+        width: 0rem;
+    }
+}

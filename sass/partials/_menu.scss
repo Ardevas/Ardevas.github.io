@@ -69,28 +69,72 @@ img {
         margin-bottom: 1.69rem;
     }
 
+    .menu__article {
+        display: flex;
+        align-items: center;
+        border-radius: 0.9375rem;
+        overflow: hidden;
+        box-shadow: 0px 4.0114941597px 15.0431032181px 0px rgba(0, 0, 0, 0.1);
 
-    &__card {
+        &:hover .userCheck {
+            animation: slideCheck 0.2s ease-in-out forwards;
+        }
+
+        &:not(:hover) .userCheck {
+            animation: slideCheckReverse 0.2s ease-in-out forwards;
+        }
+    }
+
+    .menu__info {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    .menu__card {
         display: flex;
         flex-direction: row;
-        border-radius: 0.9375rem;
         background-color: white;
         color: black;
         padding: 0.94rem;
         justify-content: space-between;
+        flex-grow: 1;
+        flex-shrink: 1;
+        white-space: nowrap;
+        overflow: hidden;
 
         h3 {
             margin: 0;
+            text-overflow: ellipsis;
+        overflow: hidden;
         }
 
         p {
             margin-top: 0.31rem;
             margin-bottom: 0;
+            text-overflow: ellipsis;
+            overflow: hidden;
         }
 
-    .menu__price {
-        padding-top: 1.4rem;
-        font-weight: bold;
+        .menu__price {
+            padding-top: 1.4rem;
+            font-weight: bold;
+        }
     }
+
+    .userCheck {
+        @include flex-row-center;
+        background-color: $green-light;
+        height: 4.82rem;
+        width: 0%;
+        transition: width 0.2s ease-in-out;
+
+        .fa-circle-check {
+            font-size: 1.5rem;
+            color: white;
+            background: $green-light;
+            width: 40%;
+        }
+    
     }
 }
