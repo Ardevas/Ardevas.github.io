@@ -81,17 +81,11 @@
   }
 }
 #loaderTitle {
-  background-image: linear-gradient(-225deg, #9356DC 0%, #FF79DA 29%, #99E2D0 67%, #99E2D0 100%);
-  background-size: auto auto;
-  background-clip: border-box;
-  background-size: 200% auto;
-  color: #fff;
-  background-clip: text;
-  text-fill-color: transparent;
+  background-image: linear-gradient(-225deg, #9356DC 0%, #FF79DA 33%, #99E2D0 66%, #008766 100%);
+  background-size: 240% auto;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: textclip 1s linear infinite;
-  display: inline-block;
+  animation: textclip 1.2s linear infinite;
 }
 
 #homepageLoader {
@@ -105,7 +99,7 @@
 #loaderTitle {
   display: flex;
   justify-content: center;
-  font-size: 500%;
+  font-size: 400%;
   transform: translateY(40vh);
 }
 
@@ -403,7 +397,7 @@ img {
   font-weight: 300;
   animation: menuTranslate-title 0.8s cubic-bezier(0, 1.08, 1, 0.99);
 }
-.menu #borderBottom {
+.menu .borderBottom {
   border-bottom: 0.1875rem solid #99E2D0;
   width: 2.5rem;
   height: 1.4rem;

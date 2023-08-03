@@ -171,19 +171,13 @@ $green-light: #99E2D0;
   background-image: linear-gradient(
     -225deg,
     $main-color 0%,
-    $second-color 29%,
-    $green-light 67%,
-    $green-light 100%
+    $second-color 33%,
+    $green-light 66%,
+    $green 100%
   );
 
-  background-size: auto auto;
-  background-clip: border-box;
-  background-size: 200% auto;
-  color: #fff;
-  background-clip: text;
-  text-fill-color: transparent;
+  background-size: 240% auto;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: textclip 1s linear infinite;
-  display: inline-block;
+  animation: textclip 1.2s linear infinite;
 }
