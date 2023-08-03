@@ -19,6 +19,96 @@
     width: 0rem;
   }
 }
+@keyframes menuTranslate-title {
+  0% {
+    transform: translateX(-7rem);
+  }
+  100% {
+    transform: translateX(0rem);
+  }
+}
+@keyframes menuTranslate-article {
+  0% {
+    transform: translateX(38rem);
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.1;
+  }
+  30% {
+    opacity: 0.2;
+  }
+  40% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.45;
+  }
+  60% {
+    opacity: 0.6;
+  }
+  70% {
+    opacity: 0.7;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  90% {
+    opacity: 0.9;
+  }
+  100% {
+    transform: translateX(0rem);
+    opacity: 1;
+  }
+}
+@keyframes animationLoader {
+  0%, 95% {
+    opacity: 0.9;
+    z-index: 100;
+  }
+  75% {
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(100vh);
+    z-index: -100;
+  }
+}
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+#loaderTitle {
+  background-image: linear-gradient(-225deg, #9356DC 0%, #FF79DA 29%, #99E2D0 67%, #99E2D0 100%);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 1s linear infinite;
+  display: inline-block;
+}
+
+#homepageLoader {
+  background: white;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  animation: animationLoader 3s ease-in-out forwards;
+}
+
+#loaderTitle {
+  display: flex;
+  justify-content: center;
+  font-size: 500%;
+  transform: translateY(40vh);
+}
+
 .homepage_title {
   display: flex;
   justify-content: center;
@@ -311,6 +401,7 @@ img {
 }
 .menu .cardTitle {
   font-weight: 300;
+  animation: menuTranslate-title 0.8s cubic-bezier(0, 1.08, 1, 0.99);
 }
 .menu #borderBottom {
   border-bottom: 0.1875rem solid #99E2D0;
@@ -347,6 +438,19 @@ img {
 }
 .menu .menu__article:not(:hover) .userCheck {
   animation: slideCheckReverse 0.2s ease-in-out forwards;
+}
+.menu .menuFirst {
+  animation: menuTranslate-article 0.8s cubic-bezier(0, 1.08, 1, 0.99);
+  animation: name duration timing-function delay iteration-count direction fill-mode;
+}
+.menu .menuSecond {
+  animation: menuTranslate-article 1.2s cubic-bezier(0, 1.08, 1, 0.99);
+}
+.menu .menuThird {
+  animation: menuTranslate-article 1.6s cubic-bezier(0, 1.08, 1, 0.99);
+}
+.menu .menuFourth {
+  animation: menuTranslate-article 2s cubic-bezier(0, 1.08, 1, 0.99);
 }
 .menu .menu__info {
   display: flex;

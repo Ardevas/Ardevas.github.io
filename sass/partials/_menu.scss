@@ -39,6 +39,7 @@ img {
 
     .cardTitle {
         font-weight: 300;
+        animation: menuTranslate-title 0.8s cubic-bezier(0,1.08,1,.99);
     }
 
     #borderBottom {
@@ -83,6 +84,23 @@ img {
         &:not(:hover) .userCheck {
             animation: slideCheckReverse 0.2s ease-in-out forwards;
         }
+    }
+
+    .menuFirst {
+        animation: menuTranslate-article 0.8s cubic-bezier(0,1.08,1,.99);
+        animation: name duration timing-function delay iteration-count direction fill-mode;
+    }
+
+    .menuSecond {
+        animation: menuTranslate-article 1.2s cubic-bezier(0,1.08,1,.99);
+    }
+
+    .menuThird {
+        animation: menuTranslate-article 1.6s cubic-bezier(0,1.08,1,.99);
+    }
+
+    .menuFourth {
+        animation: menuTranslate-article 2s cubic-bezier(0,1.08,1,.99);
     }
 
     .menu__info {
