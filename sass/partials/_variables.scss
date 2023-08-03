@@ -66,6 +66,7 @@ $green-light: #99E2D0;
     }
 }
 
+//Menus animation green check 
 @keyframes slideCheck {
     0% {
     opacity: 0;
@@ -90,6 +91,8 @@ $green-light: #99E2D0;
     }
 }
 
+
+//Menus translate
 @keyframes menuTranslate-title {
     0% {
         transform: translateX(-7rem);
@@ -144,6 +147,9 @@ $green-light: #99E2D0;
     }
 }
 
+
+//Homepage animation loader 
+//Screen slide
 @keyframes animationLoader {
     0%, 95%{
         opacity: 0.9;
@@ -161,6 +167,7 @@ $green-light: #99E2D0;
     }
 }
 
+//Title animation and colorization
 @keyframes textclip {
     to {
       background-position: 200% center;
