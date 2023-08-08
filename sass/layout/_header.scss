@@ -1,0 +1,15 @@
+h1 {
+    padding: 0.875rem 5.5625rem 0.8125rem;
+    margin: 0;
+}
+
+.headNav {
+    @include flex-row-center;
+}
+
+//Menus back to Homepage arrow
+.backHome {
+    color: black;
+    position: absolute;
+    left: 1.06rem;
+}

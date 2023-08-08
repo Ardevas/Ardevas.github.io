@@ -1,0 +1,22 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&family=Shrikhand&display=swap);
+
+$roboto: "Roboto", sans-serif;
+$shrikhand: "Shrikhand", cursive;
+
+* {
+    font-family: $roboto;
+}
+
+#loaderTitle, .headerTitle, .footerTitle, .restaurantName {
+    font-family: $shrikhand;
+}
+
+// Homepage&Menus removes links underlines 
+a {
+    text-decoration: none;
+}
+
+// Homepage&Menus lighter <p> without location&functioning
+.lighterText {
+    font-weight: lighter;
+}

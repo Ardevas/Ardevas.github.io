@@ -1,0 +1,47 @@
+@mixin flex-row-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-column-center {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+// Homepage&Menus liked heart icon
+@mixin heartGradient {
+    .like-checkbox {
+        display: none;
+    }
+
+    .fa-heart {
+        font-size: 1.35rem;
+    }
+
+    .like-icon {
+        cursor: pointer;
+    }
+
+    .liked-icon {
+        display: none;
+        background-image: linear-gradient(to top, $second_color, $main_color);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        position: relative;
+        animation: heartGradient 0.3s ease-in-out;
+        cursor: pointer;
+
+        
+    }
+
+    input[type="checkbox"]:checked + label .like-icon {
+        display: none;
+    }
+    
+    input[type="checkbox"]:checked + label .liked-icon {
+        display: inline-block;
+    }
+}

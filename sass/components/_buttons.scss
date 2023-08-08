@@ -1,34 +1,5 @@
-@import "partials/variables";
-@import "partials/homepage";
-@import "partials/menu";
-@import "partials/animations";
-
-* {
-    font-family: $roboto;
-}
-
-h1, footer h3 {
-    font-family: $shrikhand;
-}
-
-a {
-    text-decoration: none;
-}
-
-p {
-    font-weight: lighter;
-}
-
-body {
-    margin: 0;
-}
-
-h1 {
-    padding: 0.875rem 5.5625rem 0.8125rem 5.5625rem;
-    margin: 0;
-}
-
-button {
+// Homepage&Menus button
+.homeButton, .menuList__order--button {
     width: 13.625rem;
     height: 3.125rem;
     margin: 1.69rem 0 3.56rem;

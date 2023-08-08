@@ -1,0 +1,35 @@
+footer {
+    padding: 1.38rem 1.56rem;
+    background-color: $second-font-color;
+    color: white;
+    gap: 1rem;
+
+    h3 {
+        margin-top: 0;
+        font-weight: 400;
+    }
+
+    .links {
+        display: flex;
+        flex-direction: column;
+        gap: 0.44rem;
+
+        .link, .linkLight{
+            display: flex;
+            align-items: center;
+            gap: 0.69rem;
+
+            .fa-handshake-angle {
+                font-size: 0.72rem;
+            }
+
+            a {
+            color: white;
+            }
+        }
+
+        .linkLight {
+            font-weight: 300;
+        }
+    }
+}
