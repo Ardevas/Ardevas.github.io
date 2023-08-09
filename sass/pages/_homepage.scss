@@ -111,11 +111,18 @@
 @media (min-width: 1024px) {
     .functioning {
         margin: 3.12rem 11.25rem;
+        display: flex;
+        flex-direction: column;
     }
 
     .functioning .steps {
         display: flex;
         flex-direction: row;
+        gap: 2.28rem;
+    }
+
+    .functioning .steps__card {
+    width: 30%;
     }
 }
 
@@ -189,5 +196,22 @@
                 }
             }
         }
+    }
+}
+
+@media (min-width: 1024px) {
+    .menus {
+        padding: 1.88rem 11.25rem;
+    }
+
+    .menus .restaurants {
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 0;
+        justify-content: space-evenly;
+    }
+
+    .menus .restaurants .restaurantsCard {
+        width: 48.6%;
     }
 }
