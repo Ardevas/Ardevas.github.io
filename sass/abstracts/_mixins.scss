@@ -22,6 +22,7 @@
 
     .like-icon {
         cursor: pointer;
+        animation: heartEmpty 0.3s ease-in-out;
     }
 
     .liked-icon {
@@ -33,8 +34,6 @@
         position: relative;
         animation: heartGradient 0.3s ease-in-out;
         cursor: pointer;
-
-        
     }
 
     input[type="checkbox"]:checked + label .like-icon {

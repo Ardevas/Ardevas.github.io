@@ -96,6 +96,14 @@
     opacity: 1;
   }
 }
+@keyframes heartEmpty {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 body {
   margin: 0;
 }
@@ -395,6 +403,7 @@ footer .links .linkLight {
 }
 .menus .restaurants .restaurantsCard__infos .like-icon {
   cursor: pointer;
+  animation: heartEmpty 0.3s ease-in-out;
 }
 .menus .restaurants .restaurantsCard__infos .liked-icon {
   display: none;
@@ -470,6 +479,7 @@ img {
 }
 .menu .menuTitle .like-icon {
   cursor: pointer;
+  animation: heartEmpty 0.3s ease-in-out;
 }
 .menu .menuTitle .liked-icon {
   display: none;
