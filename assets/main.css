@@ -433,10 +433,11 @@ footer .links .linkLight {
     flex-direction: row;
     flex-wrap: wrap;
     margin: 0;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    gap: 3.13rem;
   }
   .menus .restaurants .restaurantsCard {
-    width: 48.6%;
+    width: 46%;
   }
 }
 img {
@@ -538,7 +539,6 @@ img {
 }
 .menu .menuList__step .menuOne {
   animation: menuTranslate-article 0.8s cubic-bezier(0, 1.08, 1, 0.99);
-  animation: name duration timing-function delay iteration-count direction fill-mode;
 }
 .menu .menuList__step .menuTwo {
   animation: menuTranslate-article 1.2s cubic-bezier(0, 1.08, 1, 0.99);

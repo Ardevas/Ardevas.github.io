@@ -208,10 +208,11 @@
         flex-direction: row;
         flex-wrap: wrap;
         margin: 0;
-        justify-content: space-evenly;
+        justify-content: space-between;
+        gap: 3.13rem;
     }
 
     .menus .restaurants .restaurantsCard {
-        width: 48.6%;
+        width: 46%;
     }
 }
