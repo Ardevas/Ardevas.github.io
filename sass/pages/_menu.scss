@@ -5,7 +5,6 @@ img {
 }
 
 .menu {
-    gap: 2.5rem;
     border-top-left-radius: 1.75rem;
     border-top-right-radius: 1.75rem;
     background-color: $main-bg-color;
@@ -141,6 +140,27 @@ img {
         .menuCard__price {
             padding-top: 1.4rem;
             font-weight: bold;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .menu {
+        margin-left: 12.06rem;
+        margin-right: 12rem;
+        bottom: 2.1rem;
+        margin-bottom: -2.1rem;
+
+        .menuTitle {
+            justify-content: center;
+        }
+
+        .menuList {
+            align-items: center;
+
+            &__step {
+                width: 64%;
+            }
         }
     }
 }
