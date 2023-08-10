@@ -170,6 +170,11 @@ h1 {
   left: 1.06rem;
 }
 
+@media (min-width: 1024px) {
+  .backHome {
+    font-size: 150%;
+  }
+}
 footer {
   padding: 1.38rem 1.56rem;
   background-color: #353535;

@@ -19,3 +19,9 @@ h1 {
     position: absolute;
     left: 1.06rem;
 }
+
+@media (min-width: 1024px) {
+    .backHome{
+        font-size: 150%;
+    }
+}
