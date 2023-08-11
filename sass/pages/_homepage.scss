@@ -11,7 +11,8 @@
     display: flex;
     justify-content: center;
     font-size: 400%;
-    transform:translateY(40vh);
+    position: relative;
+    top: 35rem;
 }
 
 .homepageTitle {
